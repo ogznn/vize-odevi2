@@ -1,0 +1,45 @@
+﻿@model VizeÖdevi.Models.Kamyoncu
+
+@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Sil</h1>
+
+
+<div>
+    <h4>Kamyoncu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Soyad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Soyad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tckimlik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tckimlik)
+        </dd>
+    </dl>
+    
+    <form asp-action="Sil">
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a asp-action="Listele">Geri Dön</a>
+    </form>
+</div>
